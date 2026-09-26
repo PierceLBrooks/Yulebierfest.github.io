@@ -1,0 +1,29 @@
+body {
+    background-color: #facf9f;
+}
+
+p {
+    text-align: center;
+}
+
+/* The container acts as the anchor point */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* The overlay image is forced to sit on top */
+.overlay-img {
+    position: absolute;
+    width: 50%;     /* Size of your overlay image */
+    z-index: 10;     /* Ensures it stays on top layer */
+}
+

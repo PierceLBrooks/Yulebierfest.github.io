@@ -60,12 +60,45 @@ a:active {
     position: relative;
 }
 
+.lefthand {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    position: relative;
+}
+
+.righthand {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    position: relative;
+}
+
+.split-row {
+  display: flex;
+  justify-content: space-between; /* Pushes items to opposite sides */
+  align-items: center;            /* Perfectly centers them vertically */
+}
+
 .flex-menu {
   display: flex;          /* Aligns items horizontally */
   list-style-type: none;  /* Removes default bullet points */
   margin: 50px;              /* Removes default browser margins */
   padding: 0;             /* Removes default browser padding */
   gap: 0;              /* Adds consistent space between items */
+}
+
+.tickets {
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #02361f;
+}
+
+.tickets:hover {
+    background-color: #04653a;
 }
 
 @font-face {

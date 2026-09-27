@@ -4,6 +4,32 @@ body {
 
 p {
     text-align: center;
+    font-family: Epilogue;
+}
+
+li {
+    font-size: 150%;
+    font-family: Epilogue;
+    margin: 25px;
+}
+
+a:link {
+    color: #02361f;
+}
+
+/* Visited link (after a user clicks it) */
+a:visited {
+    color: #02361f;
+}
+
+/* Mouse over link (when hovering) */
+a:hover {
+    color: #02361f;
+}
+
+/* Active link (the exact moment it is clicked) */
+a:active {
+    color: #02361f;
 }
 
 /* The container acts as the anchor point */
@@ -25,5 +51,36 @@ p {
     position: absolute;
     width: 50%;     /* Size of your overlay image */
     z-index: 10;     /* Ensures it stays on top layer */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.flex-menu {
+  display: flex;          /* Aligns items horizontally */
+  list-style-type: none;  /* Removes default bullet points */
+  margin: 50px;              /* Removes default browser margins */
+  padding: 0;             /* Removes default browser padding */
+  gap: 0;              /* Adds consistent space between items */
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('Assets/Fonts/Epilogue/epilogue.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('Assets/Fonts/Anton/anton.woff2') format('woff2');
 }
 
